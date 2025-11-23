@@ -163,7 +163,7 @@ export const nodesData: MemberDetail[] = [
 		photoUrl:
 			"https://commons.wikimedia.org/wiki/Special:FilePath/Taro_Aso.jpg",
 		description:
-			"高市政権誕生のキングメーカー。党内最大の後ろ盾として睨みを効かせる。",
+			"高市政権誕生を主導。党内最大の重鎮として政権運営を支える。",
 		recentStatements: [
 			"[2025/11/16] 財政規律: 「単にいくら予算をつけるといったことだけでなく...規制改革などもしっかり議論してほしい」",
 			"[2025/10/04] 総裁選指示: 「党員・党友票が多い候補に（投票せよ）」",
@@ -392,7 +392,7 @@ export const nodesData: MemberDetail[] = [
 		photoUrl:
 			"https://commons.wikimedia.org/wiki/Special:FilePath/Official_portrait_of_Prime_Minister_Yoshihiko_Noda.jpg",
 		description:
-			"野党第一党党首。高市氏とは対立関係だが、松下政経塾の先輩としてリスペクトも。",
+			"野党第一党党首。高市氏とは国会論戦で対峙するが、松下政経塾の先輩としてリスペクトも。",
 		recentStatements: [],
 		recentDietSpeeches: [],
 		career: ["第95代内閣総理大臣", "財務大臣"],
@@ -547,7 +547,7 @@ export const edgesData: RelationEdge[] = [
 		id: "party_aso_takaichi",
 		source: "aso",
 		target: "takaichi",
-		labelJa: "キングメーカー",
+		labelJa: "政治的後見",
 		relationType: "mentor",
 	},
 	{
@@ -665,7 +665,7 @@ export const edgesData: RelationEdge[] = [
 		id: "rel_takaichi_noda",
 		source: "takaichi",
 		target: "noda",
-		labelJa: "対立・先輩後輩",
+		labelJa: "政策論争・先輩後輩",
 		relationType: "opposition",
 	},
 	{
