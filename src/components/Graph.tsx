@@ -55,11 +55,11 @@ const Graph = ({
 		const links: SimLink[] = edgesData
 			.filter((d) => {
 				// Filter out links connected to party nodes
-				// biome-ignore lint/suspicious/noExplicitAny: d.source can be object or string
 				const sourceId =
+					// biome-ignore lint/suspicious/noExplicitAny: d.source can be object or string
 					typeof d.source === "object" ? (d.source as any).id : d.source;
-				// biome-ignore lint/suspicious/noExplicitAny: d.target can be object or string
 				const targetId =
+					// biome-ignore lint/suspicious/noExplicitAny: d.target can be object or string
 					typeof d.target === "object" ? (d.target as any).id : d.target;
 				const isPartyLink =
 					nodesData.find((n) => n.id === sourceId)?.type === "party" ||
@@ -356,6 +356,7 @@ const Graph = ({
 					.drag<SVGRectElement, SimNode>()
 					.on("start", dragstarted)
 					.on("drag", dragged)
+					// biome-ignore lint/suspicious/noExplicitAny: D3 typings issue
 					.on("end", dragended) as any,
 			);
 
