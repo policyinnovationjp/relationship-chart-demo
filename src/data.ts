@@ -21,7 +21,8 @@ export const nodesData: MemberDetail[] = [
 		nameEn: "Japan Innovation Party",
 		role: "連立与党",
 		partyId: "party_ishin",
-		description: "高市政権の連立パートナー。12項目の政策合意に基づき改革を推進。",
+		description:
+			"高市政権の連立パートナー。12項目の政策合意に基づき改革を推進。",
 		recentStatements: [],
 		recentDietSpeeches: [],
 		career: [],
@@ -45,7 +46,8 @@ export const nodesData: MemberDetail[] = [
 		nameEn: "Democratic Party for the People",
 		role: "野党（部分連合）",
 		partyId: "party_dpp",
-		description: "連立には参加せず、政策ごとの協力を模索する「部分連合」的立場。",
+		description:
+			"連立には参加せず、政策ごとの協力を模索する「部分連合」的立場。",
 		recentStatements: [],
 		recentDietSpeeches: [],
 		career: [],
@@ -97,8 +99,7 @@ export const nodesData: MemberDetail[] = [
 		role: "内閣総理大臣",
 		partyId: "party_ldp",
 		faction: "無派閥",
-		photoUrl:
-			"https://www.mskj.or.jp/wp-content/uploads/2023/03/05-06.png",
+		photoUrl: "https://www.mskj.or.jp/wp-content/uploads/2023/03/05-06.png",
 		description:
 			"日本初の女性首相。「責任ある積極財政」と危機管理・経済安保を掲げる。",
 		recentStatements: [
@@ -162,8 +163,7 @@ export const nodesData: MemberDetail[] = [
 		faction: "麻生派",
 		photoUrl:
 			"https://commons.wikimedia.org/wiki/Special:FilePath/Taro_Aso.jpg",
-		description:
-			"高市政権誕生を主導。党内最大の重鎮として政権運営を支える。",
+		description: "高市政権誕生を主導。党内最大の重鎮として政権運営を支える。",
 		recentStatements: [
 			"[2025/11/16] 財政規律: 「単にいくら予算をつけるといったことだけでなく...規制改革などもしっかり議論してほしい」",
 			"[2025/10/04] 総裁選指示: 「党員・党友票が多い候補に（投票せよ）」",
@@ -259,8 +259,7 @@ export const nodesData: MemberDetail[] = [
 		role: "外務大臣",
 		partyId: "party_ldp",
 		faction: "茂木派",
-		photoUrl:
-		"https://www.jiji.com/img/giin/syu/2916.jpg",
+		photoUrl: "https://www.jiji.com/img/giin/syu/2916.jpg",
 		description:
 			"茂木派領袖。総裁選での協力の見返りとして重要閣僚に。政権のバランサー。",
 		recentStatements: [],
@@ -355,8 +354,7 @@ export const nodesData: MemberDetail[] = [
 		role: "首相補佐官",
 		partyId: "party_ishin",
 		faction: "",
-		photoUrl:
-			"https://o-ishin.jp/member/images/member/endo_takashi.jpg",
+		photoUrl: "https://o-ishin.jp/member/images/member/endo_takashi.jpg",
 		description:
 			"維新所属ながら首相補佐官に起用された連立のキーマン。「陰の実力者」。",
 		recentStatements: [],
@@ -375,8 +373,7 @@ export const nodesData: MemberDetail[] = [
 		faction: "",
 		photoUrl:
 			"https://commons.wikimedia.org/wiki/Special:FilePath/Yuichiro_Tamaki_IMG_5649-1_20160903.jpg",
-		description:
-			"政策ごとの協力を模索する「部分連合」パートナー。高市氏とは松下政経塾の同期。",
+		description: "政策ごとの協力を模索する「部分連合」パートナー。",
 		recentStatements: [],
 		recentDietSpeeches: [],
 		career: ["財務官僚", "国民民主党代表"],
@@ -405,17 +402,15 @@ export const nodesData: MemberDetail[] = [
 		role: "公明党代表",
 		partyId: "party_komeito",
 		faction: "",
-		photoUrl:
-			"https://www.jiji.com/img/giin/syu/1251.jpg",
-		description:
-			"公明党代表。自公連立解消後、是々非々の立場で党を率いる。",
+		photoUrl: "https://www.jiji.com/img/giin/syu/1251.jpg",
+		description: "公明党代表。自公連立解消後、是々非々の立場で党を率いる。",
 		recentStatements: [],
 		recentDietSpeeches: [],
 		career: ["環境大臣", "国土交通大臣", "公明党代表"],
 	},
 
 	// People - Private Sector
-		{
+	{
 		id: "wakatabe",
 		type: "person",
 		nameJa: "若田部 昌澄",
@@ -423,7 +418,8 @@ export const nodesData: MemberDetail[] = [
 		role: "元日銀副総裁",
 		partyId: "group_private",
 		faction: "",
-		photoUrl: "https://www.waseda.jp/fpse/pse/assets/uploads/2018/03/dee5f4967a99da82703ed67ae78d65ac-940x705.png",
+		photoUrl:
+			"https://www.waseda.jp/fpse/pse/assets/uploads/2018/03/dee5f4967a99da82703ed67ae78d65ac-940x705.png",
 		description:
 			"積極財政・リフレ政策を提唱する学者で、成長戦略本部のブレーンとして助言。",
 		recentStatements: [],
@@ -438,7 +434,8 @@ export const nodesData: MemberDetail[] = [
 		role: "クレディ・アグリコル証券",
 		partyId: "group_private",
 		faction: "",
-		photoUrl: "https://dol.ismcdn.jp/mwimgs/6/f/-/img_6fe6dee948a224b99b933007fa98d2cc98506.jpg",
+		photoUrl:
+			"https://dol.ismcdn.jp/mwimgs/6/f/-/img_6fe6dee948a224b99b933007fa98d2cc98506.jpg",
 		description:
 			"市場分析に基づき政府の政策運営をサポートするシニアエコノミスト。",
 		recentStatements: [],
@@ -453,7 +450,8 @@ export const nodesData: MemberDetail[] = [
 		role: "PwC役員",
 		partyId: "group_private",
 		faction: "",
-		photoUrl: "https://dol.ismcdn.jp/mwimgs/1/7/-/img_174e63b9de38b92ba65261debe00897e145738.jpg",
+		photoUrl:
+			"https://dol.ismcdn.jp/mwimgs/1/7/-/img_174e63b9de38b92ba65261debe00897e145738.jpg",
 		description:
 			"民間企業の視点から成長戦略や財政政策を提言するPwCのエコノミスト。",
 		recentStatements: [],
@@ -658,7 +656,7 @@ export const edgesData: RelationEdge[] = [
 		id: "rel_takaichi_tamaki",
 		source: "takaichi",
 		target: "tamaki",
-		labelJa: "部分連合・同期",
+		labelJa: "部分連合",
 		relationType: "partial_cooperation",
 	},
 	{
@@ -672,13 +670,6 @@ export const edgesData: RelationEdge[] = [
 		id: "alumni_takaichi_noda",
 		source: "takaichi",
 		target: "noda",
-		labelJa: "松下政経塾",
-		relationType: "alumni",
-	},
-	{
-		id: "alumni_takaichi_tamaki",
-		source: "takaichi",
-		target: "tamaki",
 		labelJa: "松下政経塾",
 		relationType: "alumni",
 	},

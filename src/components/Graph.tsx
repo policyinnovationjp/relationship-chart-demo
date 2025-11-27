@@ -56,9 +56,11 @@ const Graph = ({
 			.filter((d) => {
 				// Filter out links connected to party nodes
 				// biome-ignore lint/suspicious/noExplicitAny: d.source can be object or string
-				const sourceId = typeof d.source === "object" ? (d.source as any).id : d.source;
+				const sourceId =
+					typeof d.source === "object" ? (d.source as any).id : d.source;
 				// biome-ignore lint/suspicious/noExplicitAny: d.target can be object or string
-				const targetId = typeof d.target === "object" ? (d.target as any).id : d.target;
+				const targetId =
+					typeof d.target === "object" ? (d.target as any).id : d.target;
 				const isPartyLink =
 					nodesData.find((n) => n.id === sourceId)?.type === "party" ||
 					nodesData.find((n) => n.id === targetId)?.type === "party";
@@ -173,8 +175,8 @@ const Graph = ({
 
 							if (overlapX <= 0 || overlapY <= 0) continue;
 
-							const dx = boundsA.cx - boundsB.cx || (Math.random() - 0.5);
-							const dy = boundsA.cy - boundsB.cy || (Math.random() - 0.5);
+							const dx = boundsA.cx - boundsB.cx || Math.random() - 0.5;
+							const dy = boundsA.cy - boundsB.cy || Math.random() - 0.5;
 
 							// Separate along the axis of least overlap
 							let nx = 0;
@@ -286,12 +288,10 @@ const Graph = ({
 			)
 			.force(
 				"charge",
-				d3
-					.forceManyBody<SimNode>()
-					.strength((d) => {
-						if (d.type === "cluster") return -100;
-						return d.type === "party" ? -1200 : -450;
-					}),
+				d3.forceManyBody<SimNode>().strength((d) => {
+					if (d.type === "cluster") return -100;
+					return d.type === "party" ? -1200 : -450;
+				}),
 			)
 			.force(
 				"collide",
@@ -304,7 +304,11 @@ const Graph = ({
 			.force("y", d3.forceY(height / 2).strength(0.06))
 			.force(
 				"clusterCollision",
-				createClusterCollisionForce(partyNodeGroups, clusterPadding, clusterNodes),
+				createClusterCollisionForce(
+					partyNodeGroups,
+					clusterPadding,
+					clusterNodes,
+				),
 			)
 			.force("clusterGrouping", (alpha) => {
 				nodes.forEach((d) => {
@@ -512,17 +516,17 @@ const Graph = ({
 				const maxX = Math.max(...xList) + clusterPadding;
 				const minY = Math.min(...yList) - clusterPadding;
 				const maxY = Math.max(...yList) + clusterPadding;
-				
+
 				// Update rect
 				d3.select(this)
 					.attr("x", minX)
 					.attr("y", minY)
 					.attr("width", maxX - minX)
 					.attr("height", maxY - minY);
-				
+
 				// Update label position (top left corner + padding)
 				clusterLabels
-					.filter(l => l.id === d.id)
+					.filter((l) => l.id === d.id)
 					.attr("x", minX + 10)
 					.attr("y", minY + 10)
 					.attr("text-anchor", "start");
