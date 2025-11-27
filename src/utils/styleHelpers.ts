@@ -28,7 +28,7 @@ export const getEdgeColor = (type: RelationType) => {
 			return "#ec4899"; // pink-500
 		case "council_member":
 			return "#06b6d4"; // cyan-500
-			case "advisor":
+		case "advisor":
 			return "#22d3ee"; // cyan-400
 		default:
 			return "#999";
